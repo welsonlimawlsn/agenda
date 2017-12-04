@@ -56,6 +56,12 @@
     <Compile Include="FormContato.Designer.cs">
       <DependentUpon>FormContato.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormContatoVer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormContatoVer.Designer.cs">
+      <DependentUpon>FormContatoVer.cs</DependentUpon>
+    </Compile>
     <Compile Include="MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -67,6 +73,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="FormContato.resx">
       <DependentUpon>FormContato.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormContatoVer.resx">
+      <DependentUpon>FormContatoVer.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>

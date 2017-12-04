@@ -9,3 +9,4 @@ C:\Users\welso\source\repos\Agenda\Agenda\bin\Debug\Agenda.exe
 C:\Users\welso\source\repos\Agenda\Agenda\bin\Debug\Agenda.pdb
 C:\Users\welso\source\repos\Agenda\Agenda\obj\Debug\Agenda.exe
 C:\Users\welso\source\repos\Agenda\Agenda\obj\Debug\Agenda.pdb
+C:\Users\welso\source\repos\Agenda\Agenda\obj\Debug\Agenda.FormContatoVer.resources

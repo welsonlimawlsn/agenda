@@ -88,6 +88,7 @@
             this.listBoxPessoais.Name = "listBoxPessoais";
             this.listBoxPessoais.Size = new System.Drawing.Size(186, 264);
             this.listBoxPessoais.TabIndex = 2;
+            this.listBoxPessoais.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.listBoxPessoais_MouseDoubleClick);
             // 
             // MainForm
             // 
