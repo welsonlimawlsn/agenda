@@ -11,9 +11,5 @@ namespace Agenda
     {
         public const string PASTA = @"C:\contatos";
         public const string ARQUIVO = "contatos-pessoais.txt";
-        public override void Salvar()
-        {
-            
-        }
     }
 }

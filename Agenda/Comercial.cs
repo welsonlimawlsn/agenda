@@ -9,9 +9,7 @@ namespace Agenda
     [Serializable()]
     public class Comercial : Contato
     {
-        public override void Salvar()
-        {
-            throw new NotImplementedException();
-        }
+        public const string PASTA = @"C:\contatos";
+        public const string ARQUIVO = "contatos-comerciais.txt";
     }
 }

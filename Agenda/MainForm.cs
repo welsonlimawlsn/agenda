@@ -14,6 +14,7 @@ namespace Agenda
     public partial class MainForm : Form
     {
         public static List<Contato> ListaContatosPessoais { get; set; }
+        public static List<Contato> ListaContatosComerciais { get; set; }
         public MainForm()
         {
             InitializeComponent();
@@ -33,12 +34,17 @@ namespace Agenda
         }
         private void AtulizarListas()
         {
-            ListaContatosPessoais = null;
             listBoxPessoais.Items.Clear();
-            ListaContatosPessoais = (List<Contato>)Arquivo.Ler(Pessoal.PASTA, Pessoal.ARQUIVO);
+            ListaContatosPessoais = Arquivo.Ler(Pessoal.ARQUIVO, Pessoal.PASTA) == null ? new List<Contato>() : (List<Contato>)Arquivo.Ler(Pessoal.ARQUIVO, Pessoal.PASTA);
             foreach (Contato contato in ListaContatosPessoais)
             {
                 listBoxPessoais.Items.Add(contato);
+            }
+            listBoxComerciais.Items.Clear();
+            ListaContatosComerciais = Arquivo.Ler(Comercial.ARQUIVO, Comercial.PASTA) == null ? new List<Contato>() : (List<Contato>)Arquivo.Ler(Comercial.ARQUIVO, Comercial.PASTA);
+            foreach (Contato contato in ListaContatosComerciais)
+            {
+                listBoxComerciais.Items.Add(contato);
             }
         }
 
@@ -47,7 +53,23 @@ namespace Agenda
             if(listBoxPessoais.SelectedIndex != -1)
             {
                 FormContatoVer formulario = new FormContatoVer((Contato)listBoxPessoais.SelectedItem);
-                formulario.ShowDialog();
+                formulario.Show();
+            }
+        }
+
+        private void comercialToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormContato formulario = new FormContato(new Comercial(), FormContato.Acao.Novo);
+            formulario.ShowDialog();
+            AtulizarListas();
+        }
+
+        private void listBoxComerciais_MouseDoubleClick(object sender, MouseEventArgs e)
+        {
+            if(listBoxComerciais.SelectedIndex != -1)
+            {
+                FormContatoVer formulario = new FormContatoVer((Contato)listBoxComerciais.SelectedItem);
+                formulario.Show();
             }
         }
     }

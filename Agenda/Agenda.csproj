@@ -45,7 +45,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Agenda.cs" />
     <Compile Include="Arquivo.cs" />
     <Compile Include="Comercial.cs" />
     <Compile Include="Contato.cs" />

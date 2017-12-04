@@ -278,7 +278,10 @@
             this.Controls.Add(this.labelCidade);
             this.Controls.Add(this.labelRua);
             this.Controls.Add(this.labelNome);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
             this.Name = "FormContatoVer";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormContatoVer";
             this.ResumeLayout(false);
             this.PerformLayout();

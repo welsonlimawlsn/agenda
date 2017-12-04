@@ -34,6 +34,8 @@
             this.comercialToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.label1 = new System.Windows.Forms.Label();
             this.listBoxPessoais = new System.Windows.Forms.ListBox();
+            this.listBoxComerciais = new System.Windows.Forms.ListBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -43,7 +45,7 @@
             this.menuNovoContato});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(810, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(403, 24);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -62,15 +64,16 @@
             // menuContatoPessoal
             // 
             this.menuContatoPessoal.Name = "menuContatoPessoal";
-            this.menuContatoPessoal.Size = new System.Drawing.Size(128, 22);
+            this.menuContatoPessoal.Size = new System.Drawing.Size(152, 22);
             this.menuContatoPessoal.Text = "Pessoal";
             this.menuContatoPessoal.Click += new System.EventHandler(this.menuContatoPessoal_Click);
             // 
             // comercialToolStripMenuItem
             // 
             this.comercialToolStripMenuItem.Name = "comercialToolStripMenuItem";
-            this.comercialToolStripMenuItem.Size = new System.Drawing.Size(128, 22);
+            this.comercialToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.comercialToolStripMenuItem.Text = "Comercial";
+            this.comercialToolStripMenuItem.Click += new System.EventHandler(this.comercialToolStripMenuItem_Click);
             // 
             // label1
             // 
@@ -90,17 +93,40 @@
             this.listBoxPessoais.TabIndex = 2;
             this.listBoxPessoais.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.listBoxPessoais_MouseDoubleClick);
             // 
+            // listBoxComerciais
+            // 
+            this.listBoxComerciais.FormattingEnabled = true;
+            this.listBoxComerciais.Location = new System.Drawing.Point(204, 44);
+            this.listBoxComerciais.Name = "listBoxComerciais";
+            this.listBoxComerciais.Size = new System.Drawing.Size(186, 264);
+            this.listBoxComerciais.TabIndex = 3;
+            this.listBoxComerciais.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.listBoxComerciais_MouseDoubleClick);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(204, 28);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(101, 13);
+            this.label2.TabIndex = 4;
+            this.label2.Text = "Contato Comerciais:";
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(810, 323);
+            this.ClientSize = new System.Drawing.Size(403, 323);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.listBoxComerciais);
             this.Controls.Add(this.listBoxPessoais);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.menuStrip1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MainMenuStrip = this.menuStrip1;
+            this.MaximizeBox = false;
             this.Name = "MainForm";
-            this.Text = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Agenda";
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
@@ -116,6 +142,8 @@
         private System.Windows.Forms.ToolStripMenuItem comercialToolStripMenuItem;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ListBox listBoxPessoais;
+        private System.Windows.Forms.ListBox listBoxComerciais;
+        private System.Windows.Forms.Label label2;
     }
 }
 

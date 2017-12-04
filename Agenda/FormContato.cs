@@ -41,8 +41,16 @@ namespace Agenda
 
             if(AcaoAFazer == Acao.Novo)
             {
-                MainForm.ListaContatosPessoais.Add(Contato);
-                Arquivo.Salvar(Pessoal.PASTA, Pessoal.ARQUIVO, MainForm.ListaContatosPessoais);
+                if (Contato is Pessoal)
+                {
+                    MainForm.ListaContatosPessoais.Add(Contato);
+                    Arquivo.Salvar(Pessoal.PASTA, Pessoal.ARQUIVO, MainForm.ListaContatosPessoais);
+                }
+                if (Contato is Comercial)
+                {
+                    MainForm.ListaContatosComerciais.Add(Contato);
+                    Arquivo.Salvar(Comercial.PASTA, Comercial.ARQUIVO, MainForm.ListaContatosComerciais);
+                }
             }
             MessageBox.Show("Contato salvo com sucesso!");
             this.Close();

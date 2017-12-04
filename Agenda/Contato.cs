@@ -17,7 +17,6 @@ namespace Agenda
         public string Email { get; set; }
         public string Facebook { get; set; }
         public string InformacoesAdicionais { get; set; }
-        public abstract void Salvar();
         public override string ToString()
         {
             return this.Nome;
