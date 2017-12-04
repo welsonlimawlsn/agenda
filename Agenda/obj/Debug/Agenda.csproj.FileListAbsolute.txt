@@ -1,0 +1,11 @@
+C:\Users\welso\source\repos\Agenda\Agenda\obj\Debug\Agenda.csprojResolveAssemblyReference.cache
+C:\Users\welso\source\repos\Agenda\Agenda\obj\Debug\Agenda.FormContato.resources
+C:\Users\welso\source\repos\Agenda\Agenda\obj\Debug\Agenda.MainForm.resources
+C:\Users\welso\source\repos\Agenda\Agenda\obj\Debug\Agenda.Properties.Resources.resources
+C:\Users\welso\source\repos\Agenda\Agenda\obj\Debug\Agenda.csproj.GenerateResource.Cache
+C:\Users\welso\source\repos\Agenda\Agenda\obj\Debug\Agenda.csproj.CoreCompileInputs.cache
+C:\Users\welso\source\repos\Agenda\Agenda\bin\Debug\Agenda.exe.config
+C:\Users\welso\source\repos\Agenda\Agenda\bin\Debug\Agenda.exe
+C:\Users\welso\source\repos\Agenda\Agenda\bin\Debug\Agenda.pdb
+C:\Users\welso\source\repos\Agenda\Agenda\obj\Debug\Agenda.exe
+C:\Users\welso\source\repos\Agenda\Agenda\obj\Debug\Agenda.pdb
