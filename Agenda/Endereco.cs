@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace Agenda
 {
+    [Serializable()]
     public class Endereco
     {
         public string Rua { get; set; }

@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace Agenda
 {
+    [Serializable()]
     public abstract class Contato
     {
         public string Nome { get; set; }
@@ -17,5 +18,9 @@ namespace Agenda
         public string Facebook { get; set; }
         public string InformacoesAdicionais { get; set; }
         public abstract void Salvar();
+        public override string ToString()
+        {
+            return this.Nome;
+        }
     }
 }

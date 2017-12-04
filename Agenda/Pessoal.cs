@@ -6,11 +6,14 @@ using System.Threading.Tasks;
 
 namespace Agenda
 {
+    [Serializable()]
     public class Pessoal : Contato
     {
+        public const string PASTA = @"C:\contatos";
+        public const string ARQUIVO = "contatos-pessoais.txt";
         public override void Salvar()
         {
-            Arquivo.Salvar(@"C:\contatos", "contatos-pessoais.txt", this.Nome, this.Endereco.Rua, this.Endereco.Cidade, this.Endereco.Estado, this.Endereco.CEP, this.Telefone, this.Celular, this.Whatsapp, this.Email, this.Facebook, this.InformacoesAdicionais);
+            
         }
     }
 }

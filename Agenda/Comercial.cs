@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace Agenda
 {
+    [Serializable()]
     public class Comercial : Contato
     {
         public override void Salvar()
